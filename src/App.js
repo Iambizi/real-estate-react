@@ -67,7 +67,6 @@ class App extends Component {
         item.rooms >= this.state.bedrooms
       );
     });
-
     if (this.state.city !== "All") {
       newData = newData.filter(item => {
         return item.city === this.state.city;
@@ -88,17 +87,7 @@ class App extends Component {
         return b.price - a.price;
       });
     }
-    // if(this.state.search != ''){
-    //   newData = newData.filter((item)=>{
-    //     const city = item.city.toLocaleLowerCase();
-    //     const searchText = this.state.search.toLowerCase();
-    //     const n = city.match(searchText);
 
-    //     if(n !== null){
-    //       return true
-    //     }
-
-    //   });
     if (this.state.search !== "") {
       newData = newData.filter(item => {
         const city = item.city.toLocaleLowerCase();
@@ -110,10 +99,34 @@ class App extends Component {
         }
       });
     }
+    if (this.state.elevator !== false) {
+      newData = newData.filter(
+        item => item.extras.includes("elevator") === this.state.elevator
+      );
+    }
+    if (this.state.gym !== false) {
+      newData = newData.filter(
+        item => item.extras.includes("gym") === this.state.gym
+      );
+    }
+    if (this.state.finished_basement !== false) {
+      newData = newData.filter(
+        item =>
+          item.extras.includes("finished_basement") ===
+          this.state.finished_basement
+      );
+    }
+    if (this.state.swimming_pool !== false) {
+      newData = newData.filter(
+        item =>
+          item.extras.includes("swimming_pool") === this.state.swimming_pool
+      );
+    }
     this.setState({
       filteredData: newData
     });
   }
+  //Dynamically populates data in each select item present in listingsData dummy data.
   populateForms() {
     // city
     let cities = this.state.listingsData.map(item => {

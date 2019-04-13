@@ -13,7 +13,7 @@ class Listings extends Component {
     const { listingsData } = this.props;
 
     if (listingsData === undefined || listingsData.length === 0) {
-      return "Sorry your filter did match any listing";
+      return "Sorry your filter did not match any listing";
     }
 
     return listingsData.map((listing, index) => {
@@ -44,7 +44,7 @@ class Listings extends Component {
                       </div>
                       <div className="bedrooms">
                         <i className="fas fa-bed" aria-hidden="true" />{" "}
-                        <span>{listing.rooms}</span>
+                        <span>{listing.rooms} bedrooms</span>
                       </div>
                     </div>
                     <div className="view-btn">View Listing</div>
@@ -88,7 +88,7 @@ class Listings extends Component {
                       </div>
                       <div className="bedrooms">
                         <i className="fas fa-bed" aria-hidden="true" />{" "}
-                        <span>{listing.rooms}</span>
+                        <span>{listing.rooms} bedrooms</span>
                       </div>
                     </div>
                     <div className="view-btn">View Listing</div>
@@ -113,7 +113,12 @@ class Listings extends Component {
       <React.Fragment>
         <section id="listings">
           <section className="search-area">
-            <input type="text" name="search" onChange={this.props.change} />
+            <input
+              placeholder="Search by city"
+              type="text"
+              name="search"
+              onChange={this.props.change}
+            />
           </section>
           <section className="sortby-area">
             <div className="results">
@@ -138,19 +143,21 @@ class Listings extends Component {
               </div>
             </div>
           </section>
-          <section className="listings-results"><div className="row">{this.looplistings()}</div></section>
+          <section className="listings-results">
+            <div className="row">{this.looplistings()}</div>
+          </section>
           <section id="pagination">
-          <div className="row">
-          <ul className="pages">
-              <li>Previous</li>
-              <li className="active">1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
-              <li>Next</li>
-            </ul>{" "}</div>
-            
+            <div className="row">
+              <ul className="pages">
+                <li>Previous</li>
+                <li className="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>Next</li>
+              </ul>{" "}
+            </div>
           </section>
         </section>
       </React.Fragment>

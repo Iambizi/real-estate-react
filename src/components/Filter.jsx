@@ -14,7 +14,7 @@ class Filter extends Component {
   cities() {
     if (this.props.globalState.populateFormsData.cities !== undefined) {
       const { cities } = this.props.globalState.populateFormsData;
-      console.log(cities);
+      // console.log(cities);
       return cities.map(item => {
         return (
           <option key={item} value={item}>
@@ -27,7 +27,7 @@ class Filter extends Component {
   homeTypes() {
     if (this.props.globalState.populateFormsData.homeTypes !== undefined) {
       const { homeTypes } = this.props.globalState.populateFormsData;
-      console.log(homeTypes);
+      // console.log(homeTypes);
       return homeTypes.map(item => {
         return (
           <option key={item} value={item}>
@@ -40,7 +40,7 @@ class Filter extends Component {
   bedrooms() {
     if (this.props.globalState.populateFormsData.bedrooms !== undefined) {
       const { bedrooms } = this.props.globalState.populateFormsData;
-      console.log(bedrooms);
+      // console.log(bedrooms);
       return bedrooms.map(item => {
         return (
           <option key={item} value={item}>
@@ -74,12 +74,6 @@ class Filter extends Component {
             >
               <option value="All">All Homes</option>
               {this.homeTypes()}
-              {/*<option value="Studio">Studio</option>
-              <option value="Condo">Condo</option>
-              <option value="Apartment">Apartment</option>
-              <option value="Loft">Loft</option>
-              <option value="House">House</option>
-              <option value="Ranch">Ranch</option> */}
             </select>
             <label htmlFor="city">Bedrooms</label>
             <select
@@ -88,11 +82,6 @@ class Filter extends Component {
               onChange={this.props.change}
             >
               {this.bedrooms()}
-              {/* <option value="0">0+ BR</option>
-              <option value="1">1+ BR</option>
-              <option value="2">2+ BR</option>
-              <option value="3">3+ BR</option>
-              <option value="4">4+ BR</option> */}
             </select>
             <div className="filters price">
               <span className="title">Price</span>
