@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Filter from "./components/Filter";
 import Listings from "./components/Listings";
 import listingsData from "./components/listingsData";
+import Footer from "./components/Footer";
 
 import "./sass/App.scss";
 
@@ -173,8 +174,8 @@ class App extends Component {
     // console.log(this.state.listingsData);
     return (
       <React.Fragment>
-        <Header id="content-area" />
-        <section>
+        <Header  />
+        <section id="content-area">
           <Filter
             change={this.change}
             globalState={this.state}
@@ -186,6 +187,7 @@ class App extends Component {
             globalState={this.state}
             changeView={this.changeView}
           />
+         <Footer />
         </section>
       </React.Fragment>
     );

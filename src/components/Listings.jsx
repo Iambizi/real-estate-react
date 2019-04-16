@@ -25,14 +25,15 @@ class Listings extends Component {
               <div
                 className="listing-img"
                 style={{
-                  background: `url("${listing.img}")
-          noRepeat center center`
+                  backgroundImage: `url("${listing.img}")`,
+                  backgroundRepeat:  `no repeat`,
+                  backgroundPosition: `center center`
                 }}
               >
                 <span className="address">{listing.address}</span>
                 <div className="details">
-                  <div className="user-img" />
                   <div className="col-md-9">
+                    <div className="user-img" />
                     <div className="user-details">
                       <span className="user-name">{listing.name}</span>
                       <span className="post-date">{listing.date}</span>
@@ -69,14 +70,15 @@ class Listings extends Component {
               <div
                 className="listing-img"
                 style={{
-                  background: `url("${listing.img}")
-          noRepeat center center`
+                  backgroundImage: `url("${listing.img}")`,
+                  backgroundRepeat:  `no repeat`,
+                  backgroundPosition: `center center`
                 }}
               >
                 <span className="address">{listing.address}</span>
                 <div className="details">
-                  <div className="user-img" />
                   <div className="col-md-9">
+                    <div className="user-img" />
                     <div className="user-details">
                       <span className="user-name">{listing.name}</span>
                       <span className="post-date">{listing.date}</span>
@@ -126,19 +128,19 @@ class Listings extends Component {
             </div>
             <div className="sort-options">
               <select name="sortby" id="" onChange={this.props.change}>
-                <option value="price-asc">Highest Price</option>
                 <option value="price-dsc">Lowest Price</option>
+                <option value="price-asc">Highest Price</option>
               </select>
               <div className="view">
-                <i
-                  className="fa fa-th-list"
-                  aria-hidden="true"
-                  onClick={this.props.changeView.bind(null, "long")}
-                />
                 <i
                   className="fa fa-th"
                   aria-hidden="true"
                   onClick={this.props.changeView.bind(null, "box")}
+                />
+                <i
+                  className="fa fa-th-list"
+                  aria-hidden="true"
+                  onClick={this.props.changeView.bind(null, "long")}
                 />
               </div>
             </div>

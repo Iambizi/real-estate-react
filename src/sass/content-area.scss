@@ -1,17 +1,40 @@
 #content-area {
   overflow: auto;
   width: 100%;
+  position: relative;
 }
 #filter {
-  background: $grey;
+  background: #f8faff;
   width: 30%;
   float: left;
   max-width: 300px;
   display: inline-block;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 9px 54px -4px rgba(224, 224, 224, 1);
+  -moz-box-shadow: 0 9px 54px -4px rgba(224, 224, 224, 1);
+  box-shadow: 0 9px 54px -4px rgba(224, 224, 224, 1);
 
   .inside {
     padding: 20px;
     max-width: 300px;
+    label.selecta{
+      color: #3c3956;
+    }
+    select {
+    // background-color: #FFF;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    color: $darkgrey;
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    // border-radius: px;
+    // border:1px solid #E1E5F2;
+    width: 75%;
+    height: 55%;
+    }
+   
   }
 
   h4 {
@@ -20,36 +43,32 @@
     font-weight: 500px;
     text-transform: uppercase;
   }
-  select {
-    // background-color: transparent;
-    padding: 3px;
-    font-size: 12px;
-    font-weight: 500;
-    color: #1b1b1b;
-    display: block;
-    margin-bottom: 25px;
-  }
+  
   .filters {
     .title {
-      font-size: 0.9rem;
+      font-size: 1rem;
       display: block;
       margin-bottom: 1rem;
-      color: $darkgrey;
+      color: #3c3956;
     }
     input[type="text"] {
-      border-radius: 5px;
-      font-size: 1rem;
-      padding: 0.4rem;
+      border-radius: 8px;
+      border:1px solid #E1E5F2;
+      font-size: 0.9rem;
+      padding: 10px 10px;
       width: 45%;
       display: inline-block;
       margin-right: 2.5%;
-      margin-bottom: 1rem;
+      margin-bottom: 1rem; 
+      color:$darkgrey;     
     }
     &.extras {
       label {
         display: block;
         width: 100%;
         padding: 10px 0;
+        color: $darkgrey;
+        font-size:0.9rem;
 
         input[type="checkbox"] {
           float: right;
@@ -65,6 +84,7 @@
   display: inline-block;
   padding: 15px;
   background: $offwhite;
+
   .search-area {
     input[type="text"] {
       width: 70%;
@@ -102,11 +122,14 @@
           font-size: 1.5rem;
           margin-right: 15px;
         }
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
   .listings-results {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     .listing {
       background: #fff;
       border-radius: 5px;
@@ -118,8 +141,8 @@
       color: white;
       padding: 15px;
       position: relative;
-      background: url("https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg")
-        no-repeat center center;
+      // background: url("https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg")
+      //   no-repeat center center;
       -webkit-box-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
@@ -267,6 +290,7 @@
   width: 100%;
   display: block;
   text-align: center;
+  margin-bottom: 180px;
   .pages {
     background: white;
     display: inline-block;
@@ -287,19 +311,22 @@
     }
   }
 }
-// .col-md-3 {
-//   width: 25%;
-//   display: inline-block;
-//   vertical-align: top;
-//   padding: 0 15px;
-// }
-// .col-md-9 {
-//   width: 75%;
-//   display: inline-block;
-// }
-// .col-lg-6{
-//   width: 50%;
-//   display: inline-block;
-//   vertical-align: 'top';
-//   padding: 0 15px;
-// }
+
+footer {
+  background: #141618;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  height: 80px;
+  padding: 20px 15px 110px 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  h1{
+    text-align: left;
+  }
+}

@@ -11,7 +11,7 @@ class Header extends Component {
     return (
       <React.Fragment>
         <header>
-          <div className="logo">Logo</div>
+          <div className="logo">Property Klub</div>
           <nav>
             <a href="#">Create Ads</a>
             <a href="#">About Us</a>

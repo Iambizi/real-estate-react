@@ -1,33 +1,33 @@
 const listingsData = [
   {
     name: "nina-sky",
-    address: "550 General Schmitty street",
+    address: "550 General tao street",
     city: "Montreal",
     province: "QC",
-    rooms: 3,
-    price: 320000,
+    rooms: 2,
+    price: 390000,
     floorSpace: 2000,
     extras: ["elevator", "gym"],
-    homeType: "House",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    homeType: "Condo",
+    img: "http://roccabella.ca/wp-content/uploads/2016/06/19-condo.jpg",
     date: "02/04/2019"
   },
   {
     name: "nina-sky",
-    address: "3276 Water Street",
+    address: "3276 Water Drip drip drive",
     city: "Kitchener",
     province: "ON",
     rooms: 2,
-    price: 220000,
+    price: 520000,
     floorSpace: 2500,
     extras: ["elevator", "gym"],
     homeType: "Multi Home",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "https://assets.architecturaldesigns.com/plan_assets/324999575/large/85260MS_Photo1_1547487266.jpg?1547487267",
     date: "02/04/2019"
   },
   {
     name: "nina-sky",
-    address: "211 Rue Montcalm",
+    address: "211 Omega Beam street",
     city: "Montreal",
     province: "QC",
     rooms: 1,
@@ -35,7 +35,7 @@ const listingsData = [
     floorSpace: 1500,
     extras: ["elevator", "gym"],
     homeType: "Condo",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "https://d3w216np43fnr4.cloudfront.net/5864/58159/1.jpg?version=1529098305",
     date: "02/04/2019"
   },
   {
@@ -48,32 +48,32 @@ const listingsData = [
     floorSpace: 1000,
     extras: ["elevator", "gym"],
     homeType: "Apartment",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "https://s-ec.bstatic.com/images/hotel/max1024x768/147/147564456.jpg",
     date: "02/04/2019"
   },
   {
     name: "nina-sky",
-    address: "1931  Nelson Street",
+    address: "1931  Sesame Street",
     city: "Oshawa",
     province: "ON",
     rooms: 0,
-    price: 420000,
+    price: 110000,
     floorSpace: 500,
     extras: ["elevator", "gym"],
-    homeType: "Studio",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    homeType: "Bachelor",
+    img: "https://s-ec.bstatic.com/images/hotel/max1024x768/930/93012959.jpg",
     date: "02/04/2019"
   },
   {
     name: "nina-sky",
-    address: "1200 Crystl Ship avenue",
+    address: "1200 Crystal Ship avenue",
     city: "Mississauga",
     province: "ON",
-    rooms: 2,
-    price: 150000,
+    rooms: 3,
+    price: 750000,
     floorSpace: 800,
-    extras: ["elevator", "gym"],
-    homeType: "Condo",
+    extras: ["finished_basement"],
+    homeType: "House",
     img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
     date: "02/04/2019"
   },
@@ -87,7 +87,7 @@ const listingsData = [
     floorSpace: 900,
     extras: ["elevator", "gym"],
     homeType: "Room",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "https://amp.businessinsider.com/images/566b095a72f2c151028b4ff5-750-563.jpg",
     date: "02/04/2019"
   },
   {
@@ -100,7 +100,7 @@ const listingsData = [
     floorSpace: 900,
     extras: ["elevator", "gym"],
     homeType: "Loft",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "https://static.dezeen.com/uploads/2015/10/Ons-Dorp_Standard-Studio_dezeen_936_1.jpg",
     date: "02/04/2019"
   },
   {
@@ -109,16 +109,16 @@ const listingsData = [
     city: "Montreal",
     province: "QC",
     rooms: 3,
-    price: 320000,
+    price: 950000,
     floorSpace: 2000,
     extras: ["finished_basement"],
     homeType: "House",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "https://cdn.homedit.com/wp-content/uploads/2013/07/modern-cube-house.jpg",
     date: "02/04/2019"
   },
   {
     name: "nina-sky",
-    address: "678 Palace way",
+    address: "678 Palasonic way",
     city: "Toronto",
     province: "ON",
     rooms: 2,
@@ -126,7 +126,7 @@ const listingsData = [
     floorSpace: 2500,
     extras: ["finished_basement"],
     homeType: "Multi Home",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "http://safegc.com/wp-content/uploads/2017/03/multi-family-modular-homes-california-1.jpg",
     date: "02/04/2019"
   },
   {
@@ -139,7 +139,7 @@ const listingsData = [
     floorSpace: 1500,
     extras: ["elevator", "gym"],
     homeType: "Condo",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "https://cdn.vox-cdn.com/thumbor/qpyfkqsG9QQpTZiRNRUzovSlxdA=/0x0:5000x2813/1200x800/filters:focal(2100x1007:2900x1807)/cdn.vox-cdn.com/uploads/chorus_image/image/54465061/LIVINGROOM_FINAL.0.jpeg",
     date: "02/04/2019"
   },
   {
@@ -152,7 +152,7 @@ const listingsData = [
     floorSpace: 1000,
     extras: ["elevator", "swimming_pool"],
     homeType: "Apartment",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "https://d1bvpoagx8hqbg.cloudfront.net/originals/nice-apartment-maastricht-center-631f5c1559ddd003849592abf7c11d48.jpg",
     date: "02/04/2019"
   },
   {
@@ -165,7 +165,7 @@ const listingsData = [
     floorSpace: 500,
     extras: ["elevator", "gym"],
     homeType: "Studio",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "https://odis.homeaway.com/odis/listing/a3b4bde8-9a6b-481d-91b3-75b422538fd2.c10.jpg",
     date: "02/04/2019"
   },
   {
@@ -178,7 +178,7 @@ const listingsData = [
     floorSpace: 800,
     extras: ["elevator", "gym", "swimming_pool"],
     homeType: "Condo",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "https://rew-feed-images.global.ssl.fastly.net/creb/listing/apartment/c4220120-1-o.jpg",
     date: "02/04/2019"
   },
   {
@@ -191,7 +191,7 @@ const listingsData = [
     floorSpace: 900,
     extras: ["elevator"],
     homeType: "Studio",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "https://static1.squarespace.com/static/565f247ce4b0f18e76bc2fbf/t/5b8985cd0ebbe8549f767820/1535739396695/1.jpg",
     date: "02/04/2019"
   },
   {
@@ -204,7 +204,111 @@ const listingsData = [
     floorSpace: 900,
     extras: ["elevator", "finished_basement"],
     homeType: "Loft",
-    img: "https://tobiarchitects.com/wp-content/uploads/2017/11/1.1-min.jpg",
+    img: "https://design-milk.com/images/2016/06/Loft-Hrebenky-Prague-Formafatal-1.jpg",
+    date: "02/04/2019"
+  },
+  {
+    name: "nina-sky",
+    address: "380 Gotham's reckoning drive",
+    city: "Burnaby",
+    province: "BC",
+    rooms: 3,
+    price: 320000,
+    floorSpace: 2000,
+    extras: ["finished_basement", "swimming_pool"],
+    homeType: "House",
+    img: "https://i.pinimg.com/originals/77/c4/d5/77c4d536db08d773f1aaa3d634425a14.jpg",
+    date: "02/04/2019"
+  },
+  {
+    name: "nina-sky",
+    address: "777 Slide evolution hills",
+    city: "Toronto",
+    province: "ON",
+    rooms: 2,
+    price: 220000,
+    floorSpace: 2500,
+    extras: ["finished_basement"],
+    homeType: "Multi Home",
+    img: "https://i.pinimg.com/originals/11/6d/71/116d71f94f6d6ad8da09a85f3eebd04e.jpg",
+    date: "02/04/2019"
+  },
+  {
+    name: "nina-sky",
+    address: "767 Silver brick road",
+    city: "Montreal",
+    province: "QC",
+    rooms: 2,
+    price: 620000,
+    floorSpace: 1500,
+    extras: ["elevator", "gym"],
+    homeType: "Condo",
+    img: "https://pauljohnston.com/wp-content/uploads/2-Bedroom-Condo-for-Sale-at-Beach-Club-Toronto-2.jpg",
+    date: "02/04/2019"
+  },
+  {
+    name: "nina-sky",
+    address: "2500 Selecta private",
+    city: "Ottawa",
+    province: "ON",
+    rooms: 1,
+    price: 320000,
+    floorSpace: 1000,
+    extras: ["elevator", "swimming_pool"],
+    homeType: "Apartment",
+    img: "https://images1.apartments.com/i2/yRYhCDjivMkn1m7dngXkwqbDIZnrQVfgxokQntt_XRw/117/huntington-palace-luxury-apartments-fresno-ca-2bd-1ba---1000-sf.jpg",
+    date: "02/04/2019"
+  },
+  {
+    name: "nina-sky",
+    address: "3414 Athena's shield boulevard",
+    city: "Vancouver",
+    province: "BC",
+    rooms: 0,
+    price: 120000,
+    floorSpace: 500,
+    extras: ["elevator", "gym"],
+    homeType: "Studio",
+    img: "https://images.trvl-media.com/hotels/3000000/2260000/2255300/2255246/4b901f1a_z.jpg",
+    date: "02/04/2019"
+  },
+  {
+    name: "nina-sky",
+    address: "7690 Millenium Pigeon drive",
+    city: "Mississauga",
+    province: "ON",
+    rooms: 2,
+    price: 380000,
+    floorSpace: 800,
+    extras: ["elevator", "gym", "swimming_pool"],
+    homeType: "Condo",
+    img: "https://uscx-media.s3.amazonaws.com/uploads/93378167/004_Welcome-Inside_dt.jpg",
+    date: "02/04/2019"
+  },
+  {
+    name: "nina-sky",
+    address: "0012 Kame House private",
+    city: "Montreal",
+    province: "QC",
+    rooms: 1,
+    price: 190000,
+    floorSpace: 900,
+    extras: ["elevator"],
+    homeType: "Apartment",
+    img: "https://cdn.homedit.com/wp-content/uploads/2011/01/Totteridge-Home-interior.jpg",
+    date: "02/04/2019"
+  },
+  {
+    name: "nina-sky",
+    address: "3500 Victory Nike Private",
+    city: "Toronto",
+    province: "ON",
+    rooms: 2,
+    price: 680000,
+    floorSpace: 900,
+    extras: ["elevator", "finished_basement"],
+    homeType: "Loft",
+    img: "https://www.shootfactory.co.uk/wp-content/uploads/2018/04/Clapton-Loft-E5-london-apartments-001-768x512.jpg",
     date: "02/04/2019"
   }
 ];

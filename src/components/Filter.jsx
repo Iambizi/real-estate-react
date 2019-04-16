@@ -55,8 +55,9 @@ class Filter extends Component {
       <React.Fragment>
         <section id="filter">
           <div className="inside">
-            <h4>Filter</h4>
-            <label htmlFor="city">City</label>
+            <h4>Filter listings</h4>
+            <label className="selecta" htmlFor="city">City</label>
+            <div className="selectdiv">
             <select
               name="city"
               className="filters city"
@@ -65,7 +66,7 @@ class Filter extends Component {
               <option value="All">All</option>
               {this.cities()}
             </select>
-            <label htmlFor="city">Home Type</label>
+            <label class="selecta" htmlFor="city">Home Type</label>
 
             <select
               name="homeType"
@@ -75,7 +76,8 @@ class Filter extends Component {
               <option value="All">All Homes</option>
               {this.homeTypes()}
             </select>
-            <label htmlFor="city">Bedrooms</label>
+            <label class="selecta" htmlFor="city">Bedrooms</label>
+            {" "}
             <select
               name="bedrooms"
               className="neighbourhood"
@@ -83,6 +85,7 @@ class Filter extends Component {
             >
               {this.bedrooms()}
             </select>
+            </div>
             <div className="filters price">
               <span className="title">Price</span>
               <input
@@ -91,6 +94,7 @@ class Filter extends Component {
                 className="min-price"
                 onChange={this.props.change}
                 value={this.props.globalState.min_price}
+                placeholder="$ Minimum"
               />
               <input
                 type="text"
@@ -98,6 +102,7 @@ class Filter extends Component {
                 className="max-price"
                 onChange={this.props.change}
                 value={this.props.globalState.max_price}
+                placeholder="$ Maximum"
               />
             </div>
             <div className="filters floor-space">
