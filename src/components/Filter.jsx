@@ -66,7 +66,7 @@ class Filter extends Component {
               <option value="All">All</option>
               {this.cities()}
             </select>
-            <label class="selecta" htmlFor="city">Home Type</label>
+            <label className="selecta" htmlFor="city">Home Type</label>
 
             <select
               name="homeType"
@@ -76,7 +76,7 @@ class Filter extends Component {
               <option value="All">All Homes</option>
               {this.homeTypes()}
             </select>
-            <label class="selecta" htmlFor="city">Bedrooms</label>
+            <label className="selecta" htmlFor="city">Bedrooms</label>
             {" "}
             <select
               name="bedrooms"

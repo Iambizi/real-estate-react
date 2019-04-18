@@ -1,14 +1,29 @@
 import React, { Component } from "react";
 import listingsData from "./listingsData";
+// import _ from "lodash";
+import Pagination from "./Pagination";
 
 class Listings extends Component {
   constructor() {
     super();
+    let exampleItems = [...Array(30).keys()].map(i => ({
+      id: i + 1,
+      name: "Item " + (i + 1)
+    }));
     this.state = {
-      listingsData
+      listingsData,
+      exampleItems: exampleItems,
+      pageOfItems: []
     };
     this.looplistings = this.looplistings.bind(this);
+    this.onChangePage = this.onChangePage.bind(this);
   }
+
+  onChangePage(pageOfItems) {
+    // update state with new page of items
+    this.setState({ pageOfItems: pageOfItems });
+  }
+
   looplistings() {
     const { listingsData } = this.props;
 
@@ -21,45 +36,45 @@ class Listings extends Component {
         //Box view
         return (
           <div key={index} className="col-md-3">
-            <div className="listing">
-              <div
-                className="listing-img"
-                style={{
-                  backgroundImage: `url("${listing.img}")`,
-                  backgroundRepeat:  `no repeat`,
-                  backgroundPosition: `center center`
-                }}
-              >
-                <span className="address">{listing.address}</span>
-                <div className="details">
-                  <div className="col-md-9">
-                    <div className="user-img" />
-                    <div className="user-details">
-                      <span className="user-name">{listing.name}</span>
-                      <span className="post-date">{listing.date}</span>
-                    </div>
-                    <div className="listing-details">
-                      <div className="floor-space">
-                        <i className="far fa-square" aria-hidden="true" />{" "}
-                        <span>{listing.floorSpace} ft&sup2;</span>
+              <div className="listing">
+                <div
+                  className="listing-img"
+                  style={{
+                    backgroundImage: `url("${listing.img}")`,
+                    backgroundRepeat: `no repeat`,
+                    backgroundPosition: `center center`
+                  }}
+                >
+                  <span className="address">{listing.address}</span>
+                  <div className="details">
+                    <div className="col-md-9">
+                      <div className="user-img" />
+                      <div className="user-details">
+                        <span className="user-name">{listing.name}</span>
+                        <span className="post-date">{listing.date}</span>
                       </div>
-                      <div className="bedrooms">
-                        <i className="fas fa-bed" aria-hidden="true" />{" "}
-                        <span>{listing.rooms} bedrooms</span>
+                      <div className="listing-details">
+                        <div className="floor-space">
+                          <i className="far fa-square" aria-hidden="true" />{" "}
+                          <span>{listing.floorSpace} ft&sup2;</span>
+                        </div>
+                        <div className="bedrooms">
+                          <i className="fas fa-bed" aria-hidden="true" />{" "}
+                          <span>{listing.rooms} bedrooms</span>
+                        </div>
                       </div>
+                      <div className="view-btn">View Listing</div>
                     </div>
-                    <div className="view-btn">View Listing</div>
                   </div>
                 </div>
+                <div className="bottom-info">
+                  <span className="price">{listing.price}</span>
+                  <span className="location">
+                    <i className="fas fa-map-marker-alt" naria-hidden="true" />{" "}
+                    {listing.province}, {listing.city}
+                  </span>
+                </div>
               </div>
-              <div className="bottom-info">
-                <span className="price">{listing.price}</span>
-                <span className="location">
-                  <i className="fas fa-map-marker-alt" naria-hidden="true" />{" "}
-                  {listing.province}, {listing.city}
-                </span>
-              </div>
-            </div>
           </div>
         );
       } else {
@@ -71,7 +86,7 @@ class Listings extends Component {
                 className="listing-img"
                 style={{
                   backgroundImage: `url("${listing.img}")`,
-                  backgroundRepeat:  `no repeat`,
+                  backgroundRepeat: `no repeat`,
                   backgroundPosition: `center center`
                 }}
               >
@@ -148,19 +163,23 @@ class Listings extends Component {
           <section className="listings-results">
             <div className="row">{this.looplistings()}</div>
           </section>
-          <section id="pagination">
+          {/* <section id="pagination">
             <div className="row">
               <ul className="pages">
                 <li>Previous</li>
-                <li className="active">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
+                <li className="active page-number">1</li>
+                <li className="page-number">2</li>
+                <li className="page-number">3</li>
+                <li className="page-number">4</li>
+                <li className="page-number">5</li>
                 <li>Next</li>
               </ul>{" "}
             </div>
-          </section>
+          </section> */}
+          <Pagination
+            items={this.state.exampleItems}
+            onChangePage={this.onChangePage}
+          />
         </section>
       </React.Fragment>
     );

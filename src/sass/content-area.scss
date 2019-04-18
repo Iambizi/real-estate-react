@@ -17,24 +17,23 @@
   .inside {
     padding: 20px;
     max-width: 300px;
-    label.selecta{
+    label.selecta {
       color: #3c3956;
     }
     select {
-    // background-color: #FFF;
-    padding: 3px;
-    font-size: 12px;
-    font-weight: 500;
-    color: $darkgrey;
-    display: block;
-    margin-bottom: 25px;
-    margin-top: 15px;
-    // border-radius: px;
-    // border:1px solid #E1E5F2;
-    width: 75%;
-    height: 55%;
+      // background-color: #FFF;
+      padding: 3px;
+      font-size: 12px;
+      font-weight: 500;
+      color: $darkgrey;
+      display: block;
+      margin-bottom: 25px;
+      margin-top: 15px;
+      // border-radius: px;
+      // border:1px solid #E1E5F2;
+      width: 75%;
+      height: 55%;
     }
-   
   }
 
   h4 {
@@ -43,7 +42,7 @@
     font-weight: 500px;
     text-transform: uppercase;
   }
-  
+
   .filters {
     .title {
       font-size: 1rem;
@@ -53,14 +52,14 @@
     }
     input[type="text"] {
       border-radius: 8px;
-      border:1px solid #E1E5F2;
+      border: 1px solid #e1e5f2;
       font-size: 0.9rem;
       padding: 10px 10px;
       width: 45%;
       display: inline-block;
       margin-right: 2.5%;
-      margin-bottom: 1rem; 
-      color:$darkgrey;     
+      margin-bottom: 1rem;
+      color: $darkgrey;
     }
     &.extras {
       label {
@@ -68,7 +67,7 @@
         width: 100%;
         padding: 10px 0;
         color: $darkgrey;
-        font-size:0.9rem;
+        font-size: 0.9rem;
 
         input[type="checkbox"] {
           float: right;
@@ -301,12 +300,20 @@
     li {
       padding: 20px;
       display: inline-block;
-      &.active,
-      &:hover {
+      &.active {
         background: $pink;
         color: #fff;
         font-weight: 700;
         cursor: pointer;
+        &.disabled {
+          pointer-events: none;
+        }
+      }
+      a {
+        text-decoration: none;
+        &:visited {
+          color: #000;
+        }
       }
     }
   }
@@ -323,10 +330,10 @@ footer {
   color: #fff;
   height: 80px;
   padding: 20px 15px 110px 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  h1{
+  h1 {
     text-align: left;
   }
 }

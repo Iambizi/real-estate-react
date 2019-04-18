@@ -27,7 +27,9 @@ class App extends Component {
       populateFormsData: "",
       sortby: "price-asc",
       view: "box",
-      search: ""
+      search: "",
+      currentPage: 1,
+      pageSize: 16
     };
     this.change = this.change.bind(this);
     this.filteredData = this.filteredData.bind(this);
@@ -170,11 +172,12 @@ class App extends Component {
       () => console.log(this.state)
     );
   }
+
   render() {
     // console.log(this.state.listingsData);
     return (
       <React.Fragment>
-        <Header  />
+        <Header />
         <section id="content-area">
           <Filter
             change={this.change}
@@ -187,7 +190,7 @@ class App extends Component {
             globalState={this.state}
             changeView={this.changeView}
           />
-         <Footer />
+          <Footer />
         </section>
       </React.Fragment>
     );
