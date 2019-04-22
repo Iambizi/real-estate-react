@@ -4,10 +4,14 @@ header {
   color: #fff;
   overflow: auto;
   padding: 30px 15px;
+  word-break: keep-all;
   .logo {
     float: left;
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 100;
+    span {
+      font-weight: 600;
+    }
   }
 }
 
@@ -21,13 +25,15 @@ nav {
     font-size: 0.9rem;
 
     &:hover {
-      color: #ff718e;
+      color: darkmagenta;
     }
     &.register-btn {
-      background: $pink;
+      background: thistle;
       padding: 7px 25px;
       text-align: center;
-      color: white;
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #fff;
       border-radius: 5px;
     }
   }

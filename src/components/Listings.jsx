@@ -47,7 +47,7 @@ class Listings extends Component {
                 >
                   <span className="address">{listing.address}</span>
                   <div className="details">
-                    <div className="col-md-9">
+                    <div style={{width: "95%"}} className="col-md-9">
                       <div className="user-img" />
                       <div className="user-details">
                         <span className="user-name">{listing.name}</span>
